@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+    <TextView
+        android:id="@+id/cityText"
+        android:textColor="#111"
+        android:text="Please enter the zipcode of city"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_edittext"
+        android:hint="zipcode"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+        <TextView
+            android:id="@+id/text1"
+            android:textColor="#111"
+            android:text="Please select the count of day to show weather"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/days"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/text2"
+            android:textColor="#111"
+            android:text="select language:"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/languages"
+            android:layout_marginTop="250dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/text3"
+            android:textColor="#111"
+            android:text="select temperture unit:"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"/>
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/temperature"
+            android:layout_marginTop="350dp"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="410dp"
+            android:layout_centerHorizontal="true"
+            android:text="Confirm"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
